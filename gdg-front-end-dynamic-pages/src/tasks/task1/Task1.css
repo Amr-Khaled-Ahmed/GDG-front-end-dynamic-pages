@@ -93,3 +93,105 @@ a:hover {
   color: #004080;
   text-decoration: underline;
 }
+
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  flex-grow: 1;
+}
+
+.filter-buttons {
+  margin: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-buttons button {
+  flex: 1;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.filter-buttons button.active {
+  background: #4285F4;
+  color: white;
+}
+
+.todo-text {
+  flex-grow: 1;
+  margin: 0 1rem;
+  text-align: left;
+}
+
+li.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Add these to your existing CSS */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4285F4;
+  font-size: 1rem;
+}
+
+.edit-input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.save-btn {
+  background: #34A853;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.cancel-btn {
+  background: #EA4335;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f9f9f9;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+}
